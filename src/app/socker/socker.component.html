@@ -1,0 +1,8 @@
+<ListView [items]="items" (itemTap)="onItemTap($event)" class="list-group">
+    <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+        <GridLayout>
+            <Label [text]="item.name" [text]="item.name" class="list-group-item"></Label>
+        </GridLayout>
+    </ng-template>
+</ListView>
+<Button text="Back" class = "my-button" [nsRouterLink]="['/form']"></Button><br><br>
