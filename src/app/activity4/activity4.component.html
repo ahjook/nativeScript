@@ -1,18 +1,11 @@
-<StackLayout class="form" row="*" colSpan="4">
-    <Label text="Fill up this Form" class="h1 text-center"></Label>
+<StackLayout class="form" row="1" col="0" colSpan="3">
+    <Label text="Fill up this Form" underline="true" fontAttributes="Bold"  class="h1 text-center"></Label>
     <StackLayout class="input-field">
         <TextField hint=" Enter your name...." class="input" type="text" [(ngModel)]="field1"></TextField>
     </StackLayout>
     <StackLayout class="input-field">
         <TextField hint=" Enter your role...." class="input" type="text" [(ngModel)]="field2"></TextField>
     </StackLayout>
-    <Button text="Submit" (tap)="onSubmit()"   class="btn btn-primary"></Button>
-    <Button text="Socker Player" [nsRouterLink]="['/frid']" class="btn btn-primary"></Button>
-    <Button text="Artist" (tap)="Add()" class="btn btn-primary"></Button>
+    <Button text="Submit" (tap)="onSubmit()" class="button"></Button>
 </StackLayout>
-
-
-    
-
-
 

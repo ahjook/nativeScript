@@ -8,17 +8,17 @@ import { GridLayoutComponent } from './grid-layout/grid-layout.component';
 import { Activity4Component } from './activity4/activity4.component';
 import { ArtistsComponent } from './artists/artists.component';
 import { SockerComponent } from './socker/socker.component';
-
-
+import { ImageComponent } from './image/image.component';
 
 const routes: Routes = [
-    { path: "", redirectTo: "/items", pathMatch: "full" },
+    { path: "", redirectTo: "/grid", pathMatch: "full" },
     { path: "items", component: ItemsComponent },
     { path: "item/:id", component: ItemDetailComponent },
     { path: "grid", component: GridLayoutComponent },
     { path: "form", component: Activity4Component },
     { path: "socker", component: SockerComponent },
-    { path: "artist", component: ArtistsComponent }
+    { path: "artist", component: ArtistsComponent },
+    { path: "image", component: ImageComponent }
 ];
 
 @NgModule({

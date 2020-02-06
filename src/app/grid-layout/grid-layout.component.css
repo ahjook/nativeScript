@@ -5,6 +5,23 @@
    
    
 }
-Label{
-    /* text-align:center; */
+
+.form{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS0JcMqDbTKqDTjfIRNAVocyiQbOGq3eutkuDkuMOyTuqb7lTPC");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.button {
+    android-elevation: 2;
+    background-color: lightseagreen;
+    border-color: darkolivegreen;
+    border-width: 1;
+    color: whitesmoke;
+    font-size: 20;
+    font-weight: italic;
+    /* width:1400px !important;
+    margin-left: 500px !important;
+    margin-top: 100px !important;
+     */
 }

@@ -1,14 +1,16 @@
 /* Add mobile styles for the component here.  */
-.btn-primary {
+.button {
     android-elevation: 2;
-    background-color: lightseagreen;
+    background-color:white;
     border-color: darkolivegreen;
-    border-radius: 20;
     border-width: 1;
+    padding: 0%;
     color: whitesmoke;
-    font-size: 18;
-    font-weight: bold;
-    width: 240px !important;
+    font-size: 20;
+    font-weight: italic;
+    width:100px !important;
+    /* margin-left: 500px !important;
+    margin-top: 100px !important; */
     
 }
 .form{
@@ -16,7 +18,6 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-Text{
-    color:white;
+.dragImage{
+    border-color: darkolivegreen;
 }
-

@@ -1,11 +1,15 @@
-<GridLayout columns="*,*,*,*" rows="50 , * ,* 50" backgroundColor="orange">
-<Label text="Label 1" row="0" col="2"  backgroundColor="green"></Label>
-<Label text="Label 2" row="0" col="0" colSpan="3" backgroundColor="gray"></Label>
-<Label text="Label 3" row="1" col="0"  backgroundColor="yellow"></Label>
-<Label text="Label 4" row="2" col="0" backgroundColor="red"></Label>
-<Label text="Label 5" verticalAlignment="middle" class="center" row="1" col="1" colSpan="2" rowSpan="2" backgroundColor="orange"></Label>
-<Label text="Label 6" row="0" col="4" rowSpan="4" backgroundColor="green"></Label>
-<Label text="Label 7" row="3" col="0" backgroundColor="pink"></Label>
-<Label text="Label 8" row="3" col="1" backgroundColor="purple"></Label>
-<Label text="Label 9" row="3" col="2" backgroundColor="magenta"></Label>
+<GridLayout class="form" columns="*,*,*,*" rows="*,*,*,*" >
+<!-- <GridLayout class="form" columns="*,*,*,*" rows="50 , * ,* 50" > -->
+<!-- <Label text="" row="0" col="2"  backgroundColor="green"></Label>
+<Label text="" row="0" col="0" colSpan="3" backgroundColor="gray"></Label>
+<Label text="" row="1" col="0"  backgroundColor="yellow"></Label>
+<Label text="" row="2" col="0" backgroundColor="red"></Label>
+<Label text="Click Me!" [nsRouterLink]="['/items']" verticalAlignment="middle" class="center" row="1" col="1" colSpan="2" rowSpan="2" backgroundColor="orange"></Label>
+<Label text="" row="0" col="4" rowSpan="4" backgroundColor="green"></Label>
+<Label text="" row="3" col="0" backgroundColor="pink"></Label>
+<Label text="" row="3" col="1" backgroundColor="purple"></Label>
+<Label text="" row="3" col="2" backgroundColor="magenta"></Label> -->
+    <GridLayout row="4" col="0" colSpan="4">
+        <Button text="Go to Dashboard!" [nsRouterLink]="['/items']" class="button"></Button>
+    </GridLayout>
 </GridLayout>

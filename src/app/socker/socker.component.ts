@@ -7,15 +7,15 @@ import {ItemService} from '../item/item.service'
   styleUrls: ['./socker.component.css']
 })
 export class SockerComponent implements OnInit {
-
+  
   items: Array<Item>;
-  constructor(private itemService: ItemService) { }
+  Soccer = "Soccer"
+  constructor() { }
 
   ngOnInit() {
+   
+} 
+  info(datapass){
+    this.items.push(datapass);
   }
-
-//   info(datapass){
-//     this.items.push(datapass);
-// }
-
 }

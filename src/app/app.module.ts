@@ -12,6 +12,7 @@ import { Activity4Component } from './activity4/activity4.component';
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { ArtistsComponent } from './artists/artists.component';
 import { SockerComponent } from './socker/socker.component';
+import { ImageComponent } from './image/image.component';
 
 // Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
 // import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
@@ -33,7 +34,8 @@ import { SockerComponent } from './socker/socker.component';
         GridLayoutComponent,
         Activity4Component,
         ArtistsComponent,
-        SockerComponent
+        SockerComponent,
+        ImageComponent
     ],
     providers: [],
     schemas: [

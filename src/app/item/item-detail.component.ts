@@ -16,10 +16,8 @@ export class ItemDetailComponent implements OnInit {
     button = true;
     edit = true
 
-
     constructor(private itemService: ItemService,private route: ActivatedRoute) {
-
-     }
+    }
 
     ngOnInit(): void {
         const id = +this.route.snapshot.params.id;
@@ -29,19 +27,20 @@ export class ItemDetailComponent implements OnInit {
     onTap() {
         this.item.score += 1;
         this.button = false;
-       
-
     }
+    
     remove() {
         this.item.score -= 1;
         if (this.item.score === 0) {
             this.button = true;
         }
     }
+    
     update(item) {
         this.edit = true
         this.item.name = item.name
         this.item.role = item.role
     }
+
 }
 

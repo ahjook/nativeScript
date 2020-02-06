@@ -1,16 +1,24 @@
-<ActionBar title="Details"></ActionBar>
-<FlexboxLayout flexDirection="column">
-    <FlexboxLayout class="m-15">
-        <Label class="h2" [text]="item.id + '. '"></Label>
-        <Label class="h5" [text]="item.name"></Label>
+<ActionBar title="Back" [nsRouterLink]="['/grid']" >
+    <!-- <NavigationButton icon="res://ic_arrow_back_black_24dp" (tap)="goBack()"></NavigationButton>-->
+    <!-- <ActionItem ios.position="left" text="Back" [nsRouterLink]="['/grid']"></ActionItem>  -->
+    <ActionItem ios.position="right" text="Soccer" [nsRouterLink]="['/socker']"></ActionItem>
+    <ActionItem ios.position="right" text="Artist" [nsRouterLink]="['/artist']"></ActionItem>
+    <ActionItem ios.position="right" text="Image" [nsRouterLink]="['/image']"></ActionItem>
+</ActionBar>
+
+    <FlexboxLayout flexDirection="column">
+        <FlexboxLayout>
+            <Label text="Details" class="h1 text-center"></Label>
+        </FlexboxLayout>
+        <FlexboxLayout class="m-15">
+            <Label class="h2" [text]="item.id + '. '"></Label>
+            <Label class="h5" [text]="item.name "></Label>
+        </FlexboxLayout>
+            <Label class="h4" [text]=" item.role "></Label>
+            <Button [text]="item.score" class="btn btn-primary"></Button>
+            <Button text="Goals Score" class="my-button" (tap)="onTap()"></Button><br><br>
+            <Button text="Remove Score" class="my-button" *ngIf="!button" (tap)="remove()"></Button> <br><br>
+            <ns-activity4 (SendInfo)='update($event)' [field1]="item.name" [field2]="item.role"></ns-activity4>
     </FlexboxLayout>
-    <Label class="h4" [text]="item.role"></Label>
-    <Label class="h3" text="Goal Score"></Label>
-    <Button [text]="item.score" class="btn btn-primary"></Button>
-    <Button text="Goals Score" class="my-button" (tap)="onTap()"></Button><br><br>
-    <Button text="Remove Score" class="my-button" *ngIf="!button" (tap)="remove()"></Button> <br><br>
-    <!-- <Button text="Update Info" class="my-button" (tap)="onUpdate(item)"></Button><br><br> -->
-    <ns-activity4 (SendInfo)='onUpdate($event)' [field1]="item.name" [field2]="item.role"></ns-activity4>
-</FlexboxLayout>
 
 

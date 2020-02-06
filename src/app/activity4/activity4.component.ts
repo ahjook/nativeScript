@@ -1,6 +1,6 @@
 import { Component, OnInit,Output,Input ,EventEmitter} from '@angular/core';
 import { Item } from '../item/item';
-import {ItemService} from '../item/item.service'
+
 
 @Component({
   selector: 'ns-activity4',
@@ -12,19 +12,16 @@ export class Activity4Component implements OnInit {
   @Input() field1:string;
   @Input() field2:string;
   public score=0;
-  item:Array<Item>;
+ 
 
   constructor() { }
-  // private itemService: ItemService,
 
-  ngOnInit() :void {
-    // this.item = this.itemService.getItems();
-  }
+  ngOnInit() {}
 
   onSubmit(){
     console.log(this.field1, this.field2)
-    this.SendInfo.emit({id:this.item.length +1, name:this.field1, role:this.field2, score:this.score})
-    alert("Successfully Added!")
+    this.SendInfo.emit({name:this.field1, role:this.field2, score:this.score})
+    alert("Already added!")
   }
 
   
